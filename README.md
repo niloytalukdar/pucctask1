@@ -1,7 +1,4 @@
-Here’s a full, ready-to-use **README.md** in one complete file:
-
-```markdown
-# Premier University Computer Club — Task 01 (Tailwind)
+Premier University Computer Club — Task 01 (Tailwind)
 
 This project is a responsive landing page for the **Premier University Computer Club — Software Engineering Wing**, built using **Tailwind CSS** and **Font Awesome**.  
 It includes a modern navbar, hero section, features showcase, newsletter subscription form, and footer with contact details.
@@ -75,4 +72,5 @@ This project can be hosted easily on **GitHub Pages**:
 ## 📜 License
 
 This project is licensed under the **MIT License** — see the [LICENSE](./LICENSE) file for details.
+
 
