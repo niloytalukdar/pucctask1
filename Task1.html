@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Premier University Computer Club — Task 01 (Tailwind)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --brand-primary: #1e3a8a;
+      --brand-secondary: #2563eb;
+      --brand-accent: #1d4ed8;
+      --brand-light: #f9fafb;
+    }
+  </style>
+</head>
+<body class="bg-[var(--brand-light)] text-gray-800 antialiased">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+    <div class="w-full px-10">
+      <div class="flex items-center justify-between h-20">
+        <a href="#" class="flex items-center gap-5">
+          <!-- PU symbol -->
+          <div class="w-14 h-14 rounded-full bg-[var(--brand-secondary)] flex items-center justify-center text-white text-2xl shadow-md">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <div class="text-xl font-bold">Premier University</div>
+            <div class="text-sm text-gray-500">Computer Club • Software Engineering Wing</div>
+          </div>
+        </a>
+
+        <!-- Combined nav + Join in one flex so spacing is uniform -->
+        <div class="hidden lg:flex items-center gap-10 ml-auto">
+          <nav class="flex items-center gap-10">
+            <a href="#features" class="flex items-center gap-2 text-base font-medium hover:text-[var(--brand-accent)] transition">⭐ Features</a>
+            <a href="#newsletter" class="flex items-center gap-2 text-base font-medium hover:text-[var(--brand-accent)] transition">📩 Newsletter</a>
+            <a href="#contact" class="flex items-center gap-2 text-base font-medium hover:text-[var(--brand-accent)] transition">
+              <i class="fa-solid fa-phone text-[var(--brand-accent)] mr-2"></i> Contact
+            </a>
+          </nav>
+
+          <a href="#" class="px-7 py-3 rounded-lg bg-[var(--brand-secondary)] text-white text-lg font-semibold shadow-lg hover:bg-[var(--brand-primary)] transition">🚀 Join</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="lg:hidden">
+          <button id="mobileBtn" class="p-3 rounded-md hover:bg-gray-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="lg:hidden hidden border-t border-gray-200 bg-white">
+      <div class="px-8 py-5 space-y-4">
+        <a href="#features" class="block text-base font-medium">⭐ Features</a>
+        <a href="#newsletter" class="block text-base font-medium">📩 Newsletter</a>
+        <a href="#contact" class="block text-base font-medium"><i class="fa-solid fa-phone text-[var(--brand-accent)] mr-2"></i> Contact</a>
+        <a href="#" class="block mt-4 px-5 py-3 bg-[var(--brand-secondary)] text-white rounded-md text-center font-semibold">🚀 Join</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="mt-14">
+    <section class="w-full px-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-10">
+          <h1 class="text-6xl sm:text-7xl font-extrabold leading-tight tracking-tight text-gray-900">🎓 Premier University Computer Club</h1>
+          <p class="text-2xl text-gray-600 max-w-2xl">Software Engineering Wing — A hub to <span class="font-semibold text-[var(--brand-accent)]">📘 learn</span>, <span class="font-semibold text-[var(--brand-accent)]">⚙️ build</span>, and <span class="font-semibold text-[var(--brand-accent)]">🤝 collaborate</span>. Weekly workshops, hands-on projects, and mentorship designed to help you excel.</p>
+
+          <div class="flex flex-wrap gap-5">
+            <a href="#newsletter" class="inline-flex items-center gap-2 px-8 py-5 rounded-xl bg-[var(--brand-secondary)] text-white font-semibold text-xl shadow-lg hover:bg-[var(--brand-primary)] transition">📢 Get Updates</a>
+            <a href="#features" class="inline-flex items-center gap-2 px-8 py-5 rounded-xl border-2 border-gray-200 font-semibold text-xl hover:bg-gray-100 transition">🔍 Explore</a>
+          </div>
+
+          <div class="flex items-center gap-10 mt-6">
+            <div class="inline-flex flex-col items-center bg-white p-6 rounded-2xl shadow w-48 border border-gray-200">
+              <div class="text-3xl text-[var(--brand-accent)] font-extrabold">👥 120+</div>
+              <div class="text-lg text-gray-600">Active members</div>
+            </div>
+            <div class="inline-flex flex-col items-center bg-white p-6 rounded-2xl shadow w-48 border border-gray-200">
+              <div class="text-3xl text-[var(--brand-accent)] font-extrabold">📂 30</div>
+              <div class="text-lg text-gray-600">Projects completed</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="aspect-[16/9] w-full rounded-2xl overflow-hidden shadow border border-gray-200">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&s=123456" alt="banner" class="object-cover w-full h-full" />
+          </div>
+          <div class="absolute -bottom-10 left-10 bg-white rounded-2xl p-8 shadow-lg w-80 border border-gray-200">
+            <div class="text-lg font-bold">📅 Next workshop</div>
+            <div class="text-base text-gray-600 mt-2">Full-stack web development — Sept 28, 2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="mt-32 bg-gray-50 py-24 border-t border-b border-gray-200">
+      <div class="w-full px-10">
+        <div class="mb-20 text-center">
+          <h2 class="text-5xl font-extrabold text-[var(--brand-accent)]">✨ What we offer</h2>
+          <p class="text-xl text-gray-600 mt-4">Hands-on workshops, project mentorship, and community events to make learning impactful and fun.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div class="p-10 bg-white rounded-2xl shadow hover:shadow-lg border border-gray-200 transition">
+            <h3 class="mt-4 text-2xl font-bold text-[var(--brand-accent)]">🧑‍🏫 Workshops</h3>
+            <p class="mt-2 text-lg text-gray-600">Weekly sessions on web, mobile, AI and more led by senior students and industry experts.</p>
+          </div>
+
+          <div class="p-10 bg-white rounded-2xl shadow hover:shadow-lg border border-gray-200 transition">
+            <h3 class="mt-4 text-2xl font-bold text-[var(--brand-accent)]">🤝 Mentorship</h3>
+            <p class="mt-2 text-lg text-gray-600">Pair programming, career guidance, and project reviews to help you grow faster.</p>
+          </div>
+
+          <div class="p-10 bg-white rounded-2xl shadow hover:shadow-lg border border-gray-200 transition">
+            <h3 class="mt-4 text-2xl font-bold text-[var(--brand-accent)]">🏆 Hackathons</h3>
+            <p class="mt-2 text-lg text-gray-600">Compete in exciting hackathons, win prizes, and earn recognition at the university level.</p>
+          </div>
+
+          <div class="p-10 bg-white rounded-2xl shadow hover:shadow-lg border border-gray-200 transition">
+            <h3 class="mt-4 text-2xl font-bold text-[var(--brand-accent)]">📚 Resources</h3>
+            <p class="mt-2 text-lg text-gray-600">Access repositories, curated learning materials, and practice problems anytime.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="mt-28 py-20">
+      <div class="w-full px-10">
+        <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-14 text-center border border-gray-200">
+          <h3 class="text-4xl font-extrabold">📩 Join our newsletter</h3>
+          <p class="text-xl text-gray-600 mt-4">Get event invites, workshop notes, and project opportunities straight to your inbox.</p>
+          <form id="newsletterForm" class="mt-8 flex flex-col sm:flex-row gap-5 justify-center">
+            <input type="email" required placeholder="your.email@university.edu" class="flex-1 px-6 py-5 rounded-xl border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[var(--brand-secondary)] text-lg" />
+            <button type="submit" class="px-8 py-5 rounded-xl bg-[var(--brand-secondary)] text-white font-semibold text-xl hover:bg-[var(--brand-primary)] transition">➡️ Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-32 border-t border-gray-200 bg-white">
+    <div class="w-full px-10 py-20">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+        <div>
+          <div class="flex items-center gap-5">
+            <div class="w-16 h-16 rounded-full bg-[var(--brand-secondary)] text-white flex items-center justify-center text-2xl shadow-md">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+              <div class="text-xl font-bold">Premier University</div>
+              <div class="text-sm text-gray-500">Computer Club — Software Engineering Wing</div>
+            </div>
+          </div>
+          <p class="mt-6 text-lg text-gray-600 max-w-xs">🌐 Connect with fellow students, build impactful projects, and level up your skills.</p>
+        </div>
+
+        <div class="text-lg text-gray-600">
+          <div class="font-bold mb-5 text-xl">🔗 Quick links</div>
+          <ul class="space-y-3">
+            <li><a href="#features" class="hover:text-[var(--brand-accent)]">⭐ Features</a></li>
+            <li><a href="#newsletter" class="hover:text-[var(--brand-accent)]">📩 Newsletter</a></li>
+            <li><a href="#contact" class="hover:text-[var(--brand-accent)]"><i class="fa-solid fa-phone text-[var(--brand-accent)] mr-2"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="font-bold mb-5 text-xl">📬 Contact</div>
+          <div class="text-lg text-gray-600"><i class="fa-solid fa-envelope text-[var(--brand-accent)] mr-2"></i> club@premier.edu.bd</div>
+          <div class="text-lg text-gray-600"><i class="fa-solid fa-phone text-[var(--brand-accent)] mr-2"></i> +880 1234 567890</div>
+          <div class="mt-6 flex gap-5 text-2xl">
+            <a href="#" class="text-gray-500 hover:text-[var(--brand-accent)]"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text-gray-500 hover:text-[var(--brand-accent)]"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="text-gray-500 hover:text-[var(--brand-accent)]"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 border-t border-gray-100 pt-6 text-base text-gray-500 text-center">© Premier University Computer Club — 2025. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+
+    const form = document.getElementById('newsletterForm');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const email = form.querySelector('input[type="email"]').value;
+      alert('Thanks — ' + email + ' has been added to the newsletter (demo)');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
